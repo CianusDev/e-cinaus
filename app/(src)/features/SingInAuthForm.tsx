@@ -1,10 +1,6 @@
 "use client"
-
 import React from "react"
-
 import { cn } from "@/lib/utils"
-
-import { Github } from "lucide-react"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -16,7 +12,8 @@ export function SignInAuthForm({ className, ...props }: UserAuthFormProps) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
 
   async function onSubmit(event: React.SyntheticEvent) {
-    event.preventDefault()
+    event.preventDefault();
+    console.log(event)
     setIsLoading(true)
 
     setTimeout(() => {
@@ -57,10 +54,9 @@ export function SignInAuthForm({ className, ...props }: UserAuthFormProps) {
             />
           </div>
           <Button disabled={isLoading}>
-            {isLoading && (
-              <div className="mr-2 h-4 w-4 animate-spin" />
-            )}
-            Connexion
+            {isLoading ? (
+              <div className="animate-spin w-4 h-4 inline-block border-r-black border-2 rounded-full" />
+            ):"Connexion"}
           </Button>
         </div>
       </form>

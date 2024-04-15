@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { cn } from "@/lib/utils";
+import ReductionBanner from "./features/ReductionBanner";
+import Header from "./features/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
         <body className={cn(inter.className,"flex w-full flex-col justify-center")}>
+        <ReductionBanner/>
+        <Header/>
         {children}
         </body>
     </html>

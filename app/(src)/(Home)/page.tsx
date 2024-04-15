@@ -10,8 +10,6 @@ import Footer from "../features/Footer";
 export default function Home() {
   return (
     <main>
-        <ReductionBanner/>
-        <Header/>
         <Hero/>
         <TitleBanner title="Nouveautes"/>
         <GridCard/>

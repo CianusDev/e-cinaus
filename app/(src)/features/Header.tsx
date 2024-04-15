@@ -20,7 +20,7 @@ const Header = () => {
           <ShoppingBag/>
           <div className='h-4 w-4 rounded-full flex items-center justify-center'>0</div>
         </Link>
-        <Link href={'#'} className={cn(buttonVariants({variant:"ghost"}),'relative border')}>
+        <Link href={'/articles'} className={cn(buttonVariants({variant:"ghost"}),'relative border')}>
          Explore
         </Link>
         <Link href={'/login'} className={cn(buttonVariants({variant:"outline"}),"text-primary hover:text-primary font-semibold")}>
