@@ -1,8 +1,11 @@
 import React from 'react'
+import GridCard from './GridCard'
 
 const ContainerArticles = () => {
   return (
-    <section className='flex flex-1 h-52 flex-col bg-primary shadow'>ContainerArticles</section>
+    <section className='flex basis-3/4 h-52 flex-col '>
+      <GridCard/>
+    </section>
   )
 }
 

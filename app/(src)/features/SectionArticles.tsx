@@ -5,10 +5,10 @@ import ContainerArticles from './ContainerArticles'
 
 const SectionArticles = () => {
   return (
-    <Section className='flex items-center flex-wrap'>
+    <section className='flex items-center gap-2 '>
         <SectionOptions/>
         <ContainerArticles/>
-    </Section>
+    </section>
   )
 }
 

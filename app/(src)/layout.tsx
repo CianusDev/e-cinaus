@@ -4,6 +4,7 @@ import "../globals.css";
 import { cn } from "@/lib/utils";
 import ReductionBanner from "./features/ReductionBanner";
 import Header from "./features/Header";
+import Footer from "./features/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-        <body className={cn(inter.className,"flex w-full flex-col justify-center")}>
+        <body className={cn(inter.className,"flex w-full  flex-col items-center justify-center")}>
         <ReductionBanner/>
         <Header/>
         {children}

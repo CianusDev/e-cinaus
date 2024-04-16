@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
-    <Section className='h-96'>
+    <Section className='h-[26rem]'>
         <div className='w-full relative  h-full flex items-center rounded-xl  justify-center'>
             <div className='absolute  h-full w-full rounded-xl bg-black/30'/>
             <img src="https://images.pexels.com/photos/1964471/pexels-photo-1964471.jpeg" alt="bg-hero" className='h-full w-full rounded-xl object-cover' />

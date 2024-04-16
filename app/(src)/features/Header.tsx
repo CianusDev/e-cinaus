@@ -15,7 +15,7 @@ const Header = () => {
         {/* <Image src={'/sitor_logo.png'} height={50} width={50} alt='logo'/> */}
         <h1>E-CIANUS</h1>
       </Link>
-      <div className=' gap-4 items-center w-auto flex  '>
+      <div className=' gap-4 items-center w-auto flex max-md:hidden  '>
         <Link href={'#'} className={cn(buttonVariants({variant:"default",}),'relative rounded-3xl flex items-center gap-1')}>
           <ShoppingBag/>
           <div className='h-4 w-4 rounded-full flex items-center justify-center'>0</div>
