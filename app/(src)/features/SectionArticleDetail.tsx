@@ -3,7 +3,7 @@ import ArticleImage from './ArticleImage'
 import { ArticleProps } from './Article'
 import ArticleDetails from './ArticleDetails'
 export type SectionArticleDetailProps = {
-    article?: ArticleProps
+    article: ArticleProps
  }
 
 const SectionArticleDetail = (props:SectionArticleDetailProps) => {

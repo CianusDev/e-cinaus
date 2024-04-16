@@ -5,10 +5,16 @@ import { ToggleGroupSize } from './ToogleSize'
 import { Label } from '@/components/ui/label'
 import { Separator } from '@/components/ui/separator'
 import Color from './Color'
+import { SelectCategory } from './SelectCategory'
 
 const SectionOptions = () => {
   return (
     <section className='flex basis-1/4 h-52 flex-col items-start bg-muted-primary rounded-lg p-4 '>
+      <h1 className='font-semibold text-lg'>Categories</h1>
+      <Separator className='my-2'/>
+      <div className='flex items-center gap-4 py-4 flex-wrap'>
+      <SelectCategory/>
+      </div>
       <h1 className='font-semibold text-lg'>Sizes</h1>
       <Separator className='my-2'/>
       <div className='flex items-center gap-4 py-4 flex-wrap'>

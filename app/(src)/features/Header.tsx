@@ -1,5 +1,6 @@
 'use client'
 import { Button, buttonVariants } from '@/components/ui/button';
+import { useCartStore } from '@/lib/store.cart';
 import { cn } from '@/lib/utils';
 import { ShoppingBag, ShoppingCartIcon } from 'lucide-react';
 import Link from 'next/link';
@@ -8,7 +9,8 @@ import React from 'react'
 
 
 const Header = () => {
-    const pathname=usePathname();
+  const {cart} = useCartStore();
+
   return (
     <header className='flex w-full sticky top-0 shadow-sm z-50 bg-white px-6 h-16 items-center justify-between'>
       <Link href={"/"} className=' font-bold text-xl flex items-center '>
@@ -18,7 +20,7 @@ const Header = () => {
       <div className=' gap-4 items-center w-auto flex max-md:hidden  '>
         <Link href={'#'} className={cn(buttonVariants({variant:"default",}),'relative rounded-3xl flex items-center gap-1')}>
           <ShoppingBag/>
-          <div className='h-4 w-4 rounded-full flex items-center justify-center'>0</div>
+          <div className='h-4 w-4 rounded-full flex items-center justify-center'>{cart.length}</div>
         </Link>
         <Link href={'/articles'} className={cn(buttonVariants({variant:"ghost"}),'relative border')}>
          Explore
